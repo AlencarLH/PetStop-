@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/splashscreenFragment">
+    <fragment
+        android:id="@+id/splashscreenFragment"
+        android:name="SplashscreenFragment"
+        android:label="SplashscreenFragment">
+        <action
+            android:id="@+id/action_splashscreenFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.LoginFragment"
+        android:label="LoginFragment" />
+</navigation>

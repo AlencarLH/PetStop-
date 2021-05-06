@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Stars_Perfil_Vet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.PerfilVeterinarioFragment">
+
+    <TextView
+        android:id="@+id/tv_Sugerir_local_petfriendly"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:text="@string/tv_Fulado_de_tal_perfil_vet"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/Foto_Cadastra_pet_perdido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_vet_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        tools:src="@tools:sample/avatars" />
+
+    <RatingBar
+        android:id="@+id/Stars_Perfil_Petshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progress="4"
+        android:progressTint="#FB0202"
+        android:rating="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <EditText
+        android:id="@+id/pb_Nome_do_pet_perdido"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/tb_Nome_perfil_vet"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/tb_Nome_perfil_vet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <EditText
+        android:id="@+id/tb_Nome_do_local_sugerir_petfriendly"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/tb_Idade"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/tb_Idade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <EditText
+        android:id="@+id/tb_Local_de_trabalho"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/tb_Local_de_trabalho"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/tb_Local_de_trabalho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <EditText
+        android:id="@+id/tb_Descrição_sugerir_local_petfriendly"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/tb_Contato_perfil_vet"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/tb_Contato_perfil_vet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
+    <EditText
+        android:id="@+id/tb_Descrição_detalhada_do_pet_sumido"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/tb_Resumo_curricular"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/tb_Resumo_curricular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <TextView
+        android:id="@+id/Esta_disponível_para_atendimento_domenciliar"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:text="@string/Esta_disponível_para_atendimento_domenciliar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <RadioButton
+        android:id="@+id/rb_Sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_Sim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <RadioButton
+        android:id="@+id/rb_Nâo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_Nâo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
