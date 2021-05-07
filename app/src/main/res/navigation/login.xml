@@ -23,5 +23,20 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="br.iesb.mobile.petstop.ui.fragment.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.CadastroFragment"
+        android:label="CadastroFragment" />
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.ForgotFragment"
+        android:label="ForgotFragment" />
 </navigation>

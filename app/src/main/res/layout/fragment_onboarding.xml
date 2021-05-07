@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="petcomecar"
+            type="br.iesb.mobile.petstop.ui.fragment.onboarding.OnboardingFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,6 +26,7 @@
 
         <Button
             android:id="@+id/btOnboarding"
+            android:onClick="@{ petcomecar :: irParaLogin }"
             android:layout_width="373dp"
             android:layout_height="79dp"
             android:layout_marginStart="16dp"
