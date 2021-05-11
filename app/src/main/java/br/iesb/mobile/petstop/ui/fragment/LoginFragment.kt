@@ -8,12 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.adapter.FragmentStateAdapter
 import br.iesb.mobile.petstop.R
 import android.widget.Toast
 import br.iesb.mobile.petstop.databinding.FragmentLoginBinding
-import br.iesb.mobile.petstop.databinding.FragmentOnboardingBinding
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_login.*
 
 
 class LoginFragment : Fragment() {
@@ -51,19 +50,24 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //Bt cadastrar
-
-
-        /*
-        //Bt redefinir senha
-        bt_redefinir.setOnClickListener {
-            //terminar navegação
-        }
-
-
-
 
         //Autentica Firebase
+        bt_entrar.setOnClickListener {
+            val email = et_login.text.toString()
+            val password = et_pass.text.toString()
+            val auth = FirebaseAuth.getInstance()
+
+            val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
+            taskDeLogin.addOnCompleteListener { resultado ->
+                if (resultado.isSuccessful){
+                    Toast.makeText(activity,"Login feito com sucesso!", Toast.LENGTH_LONG).show()
+                    findNavController().navigate(R.id.action_loginFragment_to_menuFragment)
+                }else{
+                    Toast.makeText(activity,"E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+
         bt_login.setOnClickListener {
             val email = et_login.text.toString()
             val password = et_pass.text.toString()
@@ -72,12 +76,14 @@ class LoginFragment : Fragment() {
             val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
             taskDeLogin.addOnCompleteListener { resultado ->
                 if (resultado.isSuccessful){
-                    //terminar navegação
+                    Toast.makeText(activity,"Login feito com sucesso!", Toast.LENGTH_LONG).show()
+                    findNavController().navigate(R.id.action_loginFragment_to_menuFragment)
                 }else{
                     Toast.makeText(activity,"E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG).show()
                 }
             }
-        }*/
+        }
+
     }
 
 }

@@ -8,15 +8,20 @@ import android.view.ViewGroup
 import br.iesb.mobile.petstop.R
 
 
+class FeiraAdocaoFragment : Fragment() {
 
-class CadastraPetPerdidoFragment : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
 
+        }
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastra_pet_perdido, container, false)
+        return inflater.inflate(R.layout.fragment_feira_adocao, container, false)
     }
 
 

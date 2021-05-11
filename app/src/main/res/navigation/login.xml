@@ -30,13 +30,107 @@
         <action
             android:id="@+id/action_loginFragment_to_forgotFragment"
             app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/cadastroFragment"
         android:name="br.iesb.mobile.petstop.ui.fragment.CadastroFragment"
-        android:label="CadastroFragment" />
+        android:label="CadastroFragment" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/forgotFragment"
         android:name="br.iesb.mobile.petstop.ui.fragment.ForgotFragment"
-        android:label="ForgotFragment" />
+        android:label="ForgotFragment" >
+        <action
+            android:id="@+id/action_forgotFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_comuMenuFragment"
+            app:destination="@id/comuMenuFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_listaFragment2"
+            app:destination="@id/listaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_chatbotFragment"
+            app:destination="@id/chatbotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comuMenuFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.ComuMenuFragment"
+        android:label="fragment_comu_menu"
+        tools:layout="@layout/fragment_comu_menu" >
+        <action
+            android:id="@+id/action_comuMenuFragment_to_encontrosFragment"
+            app:destination="@id/encontrosFragment" />
+        <action
+            android:id="@+id/action_comuMenuFragment_to_petsPerdidosFragment"
+            app:destination="@id/petsPerdidosFragment" />
+        <action
+            android:id="@+id/action_comuMenuFragment_to_gruposFragment"
+            app:destination="@id/gruposFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/encontrosFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.EncontrosFragment"
+        android:label="fragment_encontros"
+        tools:layout="@layout/fragment_encontros" >
+        <action
+            android:id="@+id/action_encontrosFragment_to_sugerirEncontroFragment"
+            app:destination="@id/sugerirEncontroFragment" />
+        <action
+            android:id="@+id/action_encontrosFragment_to_participarEncontroFragment"
+            app:destination="@id/participarEncontroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petsPerdidosFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.PetsPerdidosFragment"
+        android:label="PetsPerdidosFragment" />
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.ListaFragment"
+        android:label="ListaFragment" >
+        <action
+            android:id="@+id/action_listaFragment2_to_perfilVeterinarioFragment"
+            app:destination="@id/perfilVeterinarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gruposFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.GruposFragment"
+        android:label="GruposFragment" >
+        <action
+            android:id="@+id/action_gruposFragment_to_grupoSelecionadoFragment"
+            app:destination="@id/grupoSelecionadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatbotFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.ChatbotFragment"
+        android:label="ChatbotFragment" />
+    <fragment
+        android:id="@+id/perfilVeterinarioFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.PerfilVeterinarioFragment"
+        android:label="fragment_perfil_veterinario"
+        tools:layout="@layout/fragment_perfil_veterinario" />
+    <fragment
+        android:id="@+id/sugerirEncontroFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.SugerirEncontroFragment"
+        android:label="fragment_sugerir_encontro"
+        tools:layout="@layout/fragment_sugerir_encontro" />
+    <fragment
+        android:id="@+id/participarEncontroFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.ParticiparEncontroFragment"
+        android:label="ParticiparEncontroFragment" />
+    <fragment
+        android:id="@+id/grupoSelecionadoFragment"
+        android:name="br.iesb.mobile.petstop.ui.fragment.GrupoSelecionadoFragment"
+        android:label="GrupoSelecionadoFragment" />
 </navigation>

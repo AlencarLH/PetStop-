@@ -8,7 +8,7 @@
     tools:context=".ui.fragment.CadastraPetPerdidoFragment">
 
     <TextView
-        android:id="@+id/tv_Sugerir_local_petfriendly"
+        android:id="@+id/nome_local_petfriendly"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:text="@string/tv_Cadastra_pet_perdido"
@@ -111,5 +111,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/bt_cadastra_pet_perdido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tv_Cadastra_pet_perdido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_Descrição_detalhada_do_pet_sumido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

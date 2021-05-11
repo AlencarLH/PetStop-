@@ -8,17 +8,17 @@
     tools:context=".ui.fragment.PerfilVeterinarioFragment">
 
     <TextView
-        android:id="@+id/tv_Sugerir_local_petfriendly"
-        android:layout_width="241dp"
-        android:layout_height="40dp"
+        android:id="@+id/nome_local_petfriendly"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
         android:text="@string/tv_Fulado_de_tal_perfil_vet"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <ImageView
         android:id="@+id/Foto_Cadastra_pet_perdido"
@@ -27,7 +27,7 @@
         android:contentDescription="@string/desc_vet_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.147"

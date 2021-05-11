@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import br.iesb.mobile.petstop.R
-import br.iesb.mobile.petstop.databinding.FragmentListaBinding
+import br.iesb.mobile.petstop.databinding.FragmentLocalPetFriendlyBinding
 
 
-class ListaFragment : Fragment() {
+class LocalPetFriendlyFragment : Fragment() {
 
-    private lateinit var binding: FragmentListaBinding
+    private lateinit var binding: FragmentLocalPetFriendlyBinding
 
-    fun irParaPerfilVeterinario( v : View){
+    fun irPara( v : View){
         findNavController().navigate(R.id.action_listaFragment2_to_perfilVeterinarioFragment)
     }
 
@@ -27,9 +27,9 @@ class ListaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentListaBinding.inflate(inflater, container, false)
+        binding = FragmentLocalPetFriendlyBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
-        binding.navlista = this
+        binding.navlocalpetf = this
 
         return binding.root
 
